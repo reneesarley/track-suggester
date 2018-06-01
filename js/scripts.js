@@ -14,16 +14,15 @@ $(function(){
     var currentValString = ""
   //on click function for any input
   $("input").click(function(){
-    var thisValue
     var currentAs
-    thisValue = $(this).val();
-    alert(thisValue);
-    currentValString = currentValString + thisValue;
+    var currentBs
+    var currentCs
+    currentValString = currentValString + $(this).val();
     alert(currentValString);
-    currentAs = currentValString.split("a").length - 1
-    alert(currentAs);
-
-
+    currentAs = currentValString.split("a").length - 1;
+    currentBs = currentValString.split("b").length - 1;
+    currentCs = currentValString.split("c").length - 1;
+    alert("a: " + currentAs + " b: " + currentBs + " c: " + currentCs);
   });
 
 
