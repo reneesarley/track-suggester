@@ -11,11 +11,11 @@ _This site collects responses from users and make suggestions for which Epicodus
 ## Setup/Installation Requirements
 
 * Clone git repo from here: https://github.com/reneesarley/track-suggester
-* View deployed site here: https://github.com/reneesarley/track-suggester
+* View deployed site here: https://reneesarley.github.io/track-suggester/
 
 ## Known Bugs
 
-_There are no known bugs at this time._
+_Track names are hidden when viewer is below 991px and the reset button is clicked_
 
 ## Support and contact details
 

@@ -90,9 +90,6 @@ label {
 
 @media screen and (max-width: 991px) {
 
-body{
-  background-color: pink;
-}
 
 .trackName{
   font-size: 1.5em;
