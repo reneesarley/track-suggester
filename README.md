@@ -30,6 +30,6 @@ _Please email me with any questions_
 
 ### License
 
-*{This software is licensed under the MIT license.}*
+*This software is licensed under the MIT license.*
 
 Copyright (c) 2018 **Renee Sarley**
