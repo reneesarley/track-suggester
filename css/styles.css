@@ -2,7 +2,6 @@ body{
 }
 
 
-
 #rubyYes{
   background-color: pink;
 }
@@ -13,6 +12,10 @@ body{
 
 #cYes{
   background-color: orange;
+}
+
+.yes{
+  display: none;
 }
 
 .no{

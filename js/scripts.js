@@ -11,14 +11,15 @@ $(function(){
     event.preventDefault();
   });
 
+
     var currentValString = ""
   //on click function for any input
   $("input").click(function(){
     var currentAs
     var currentBs
     var currentCs
-    var rubyYesClass
-    var rubyNoClass
+    var rubyYesCol
+    var rubyNoCol
     currentValString = currentValString + $(this).val();
     alert(currentValString);
     //get letter counts
@@ -27,12 +28,12 @@ $(function(){
     currentCs = currentValString.split("c").length - 1;
     alert("a: " + currentAs + " b: " + currentBs + " c: " + currentCs);
     //add letter value to class var
-    rubyYesClass = "col-md-" + currentAs;
-    rubyNoClass = "col-md-" + (10-currentAs);
-    alert(rubyYesClass);
-    alert(rubyNoClass);
-    //update class list for
-
+    rubyYesCol = "col-md-" + currentAs;
+    rubyNoCol = "col-md-" + (10-currentAs);
+    alert(rubyYesCol);
+    alert(rubyNoCol);
+    //update class list for tracks
+    $("#rubyYes").attr('class', rubyYesCol);
 
   });
 
