@@ -15,7 +15,7 @@ _This site collects responses from users and makes suggestions for which Epicodu
 
 ## Known Bugs
 
-_Track names are hidden when viewer is below 991px and the reset button is clicked_
+_No known bugs at this time_
 
 ## Support and contact details
 

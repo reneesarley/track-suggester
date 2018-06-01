@@ -4,8 +4,8 @@ $(function(){
 
   $("#resetButton").click(function() {
     $(".trackForm").trigger("reset");
-    $(".no").attr('class', "col-md-10 no");
-    $(".yes").attr('class', "hidden yes");
+    $(".no").attr('class', "col-xs-10 no");
+    $(".yes").attr('class', "yes hidden");
     $("input").attr("disabled", false);
     currentValString = ""
   });
