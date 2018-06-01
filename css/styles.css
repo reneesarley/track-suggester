@@ -1,3 +1,18 @@
 body{
-  background-color: blue;
+}
+
+#rubyYes{
+  background-color: pink;
+}
+
+#cssYes{
+  background-color: yellow;
+}
+
+#cYes{
+  background-color: orange;
+}
+
+.no{
+  background-color: white
 }
