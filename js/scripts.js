@@ -19,6 +19,8 @@ $(function(){
     var rubyNoCol
     var cssYesCol
     var cssNoCol
+    var parentId = $(this).attr("name");
+    $("#" + parentId + " input").attr("disabled", true);
     function updateClasses(yesCol, noCol, trackName){
       if(eval(trackName + "Current") > 0){
         yesCol = "col-xs-" + eval(trackName + "Current");
