@@ -28,8 +28,8 @@ $(function(){
       if(eval(trackName + "Current") > 0){
         yesCol = "col-xs-" + eval(trackName + "Current");
         noCol = "col-xs-" + (10- eval(trackName + "Current"));
-        $("#" + trackName + "Yes").attr('class', yesCol);
-        $("#" + trackName + "No").attr('class', noCol);
+        $("#" + trackName + "Yes").attr('class', yesCol + " yes");
+        $("#" + trackName + "No").attr('class', noCol + " no");
       }else{
         yesCol = yesCol;
         noCol = noCol;

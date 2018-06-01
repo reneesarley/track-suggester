@@ -24,9 +24,11 @@ h2{
   font-size: 1.25em;
   text-align: center;
   padding-top: 15px;
-  border-top: 2px dashed #404040;
+  padding-bottom: 15px;
   margin-top: 20px;
-
+  margin-bottom: 20px;
+  background-color: #00b3b4;
+  color: white;
 }
 
 h3{
@@ -46,19 +48,14 @@ h3{
 }
 .trackResult{
   height: 100px;
-  background-color: orange;
   border: 3px solid white;
-}
-
-.purple{
-  border-bottom: 3px solid purple;
 }
 
 .trackName{
   font-size: 1.5em;
   font-family: sans-serif;
   background-color:  white;
-  text-align: center;
+  text-align: right;
   height: 50px;
   /* -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -72,11 +69,19 @@ h3{
   margin-top: auto;
   margin-bottom: auto;
   height; 100%;
+  border-left: 2px dashed #404040;
 }
-.yes{
+.hidden{
   display: none;
 }
 
+.yes{
+  border: 1px solid white;
+  height: 100px;
+}
+
 .no{
-  background-color: white
+  background-color: grey;
+  border: 1px solid white;
+  height: 100px;
 }
