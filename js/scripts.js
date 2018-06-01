@@ -5,6 +5,7 @@ $(function(){
     $(".trackForm").trigger("reset");
     $(".no").attr('class', "col-md-10 no");
     $(".yes").attr('class', "hidden yes");
+    $("input").attr("disabled", false);
 
   });
 
