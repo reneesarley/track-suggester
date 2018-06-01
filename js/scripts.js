@@ -20,6 +20,8 @@ $(function(){
     var currentCs
     var rubyYesCol
     var rubyNoCol
+    var cssYesCol
+    var cssNoCol
     currentValString = currentValString + $(this).val();
     alert(currentValString);
     //get letter counts
@@ -28,14 +30,26 @@ $(function(){
     currentCs = currentValString.split("c").length - 1;
     alert("a: " + currentAs + " b: " + currentBs + " c: " + currentCs);
     //add letter value to class var
-    rubyYesCol = "col-md-" + currentAs;
-    rubyNoCol = "col-md-" + (10-currentAs);
-    alert(rubyYesCol);
-    alert(rubyNoCol);
-    //update class list for tracks
-    $("#rubyYes").attr('class', rubyYesCol);
+    cssYesCol = "col-xs-" + currentBs;
+    cssNoCol = "col-xs-" + (10-currentBs);
+    //add letter value to class var and class list for tracks if currentCount over 0
+    if(currentAs > 0){
+      rubyYesCol = "col-xs-" + currentAs;
+      rubyNoCol = "col-xs-" + (10-currentAs);
+      $("#rubyYes").attr('class', rubyYesCol);
+      $("#rubyNo").attr('class', rubyNoCol);
+    }else{
+      alert("no updates to As");
+      }
+    if(currentBs > 0){
+      cssYesCol = "col-xs-" + currentBs;
+      cssNoCol = "col-xs-" + (10-currentBs);
+      $("#cssYes").attr('class', cssYesCol);
+      $("#cssNo").attr('class', cssNoCol);
+    }else{
+      alert("no updates to Bs");
+      }
 
   });
-
 
 });
