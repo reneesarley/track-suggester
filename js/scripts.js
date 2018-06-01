@@ -1,14 +1,14 @@
 $(function(){
 
+  var currentValString = ""
 
   $("#resetButton").click(function() {
     $(".trackForm").trigger("reset");
     $(".no").attr('class', "col-md-10 no");
     $(".yes").attr('class', "hidden yes");
     $("input").attr("disabled", false);
+    currentValString = ""
   });
-
-  var currentValString = ""
 
   //on click function for any input
   $("input").click(function(){

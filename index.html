@@ -18,7 +18,46 @@
         <h2>Answer the questions to see which track is best for you!</h2>
         <div class="col-md-6 survey">
           <form id="trackForm">
-            <h3>This is where Question #1 one will be</h3>
+            <h3>What do you think of Microsoft applications?</h3>
+            <div class="form-group questions" id="q1">
+              <div class="form-check form-check-inline">
+                <label class="form-check-label control-label" for="q1aa">
+                  <input class="form-check-input" type="radio" name="q1" id="q1aa" value="aa" required>
+                  I don't care either way.
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label control-label" for="q1bb">
+                  <input class="form-check-input" type="radio" name="q1" id="q1bb" value="bb" required>
+                  No, thanks!
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label control-label" for="q1cc">
+                <input class="form-check-input" type="radio" name="q1" id="q1cc" value="cc" required>
+                  I love them!
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label control-label" for="q1ab">
+                  <input class="form-check-input" type="radio" name="q1" id="q1ab" value="ab" required>
+                  ab
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label control-label" for="q1ac">
+                <input class="form-check-input" type="radio" name="q1" id="q1ac" value="ac" required>
+                   I think they're pretty cool.
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label control-label" for="q1bc">
+                <input class="form-check-input" type="radio" name="q1" id="q1bc" value="bc" required>
+                  I guess they're alright.
+                </label>
+              </div>
+            </div>
+            <h3>This is where Question #2 one will be</h3>
             <div class="form-group questions" id="q1">
               <div class="form-check form-check-inline">
                 <label class="form-check-label control-label" for="q1aa">
@@ -57,82 +96,40 @@
                 </label>
               </div>
             </div>
-            <h3>This is where Question #2 one will be</h3>
-            <div class="form-group questions" id="q2">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="q1aa" value="aa" required>
-                <label class="form-check-label control-label" for="q2aa">aa</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="q2bb" value="bb" required>
-                <label class="form-check-label control-label" for="q2bb">
-                  bb
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="q2cc" value="cc" required>
-                <label class="form-check-label control-label" for="q2cc">
-                  cc
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="q2ab" value="ab" required>
-                <label class="form-check-label control-label" for="q2ab">
-                  ab
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="q2ac" value="ac" required>
-                <label class="form-check-label control-label" for="q2ac">
-                   ac
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="q2bc" value="bc" required>
-                <label class="form-check-label control-label" for="q2bc">
-                  bc
-                </label>
-              </div>
-            </div>
             <button type="reset" id="resetButton" class="btn btn-secondary">Reset Form</button>
           </form>
         </div>
         <div class="col-md-6 results">
           <h3>This is what we think you will be most interested in:</h3>
           <div class="row trackResult ruby">
-            <div class="col-md-2 trackName">
+            <div class="col-xs-2 trackName">
               Ruby/<br>Rails
             </div>
             <div id ="rubyYes" class="yes hidden">
-
             </div>
-            <div id ="rubyNo" class="col-md-10 no">
-
+            <div id ="rubyNo" class="col-xs-10 no">
             </div>
           </div>
           <div class="row trackResult css">
-            <div class="col-md-2 trackName">
+            <div class="col-xs-2 trackName">
               CSS/<br>React
             </div>
             <div id ="cssYes" class="yes hidden">
-
             </div>
-            <div id ="cssNo" class="col-md-10 no">
+            <div id ="cssNo" class="col-xs-10 no">
             </div>
           </div>
           <div class="row trackResult cSharp">
-            <div class="col-md-2 trackName">
+            <div class="col-xs-2 trackName">
               C#/<br>.NET
             </div>
             <div id ="cYes" class="yes hidden">
             </div>
-            <div id ="cNo" class="col-md-10 no">
-
+            <div id ="cNo" class="col-xs-10 no">
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

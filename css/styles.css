@@ -33,11 +33,14 @@ h2{
 
 h3{
   font-size: 1.25em;
+  margin-bottom: -1px;
 }
 
 .form-check{
-  display: inline;
-  padding: 10px;
+  display: inline-block;
+}
+label {
+ padding-left: 13px;
 }
 
 #rubyYes{
@@ -61,7 +64,7 @@ h3{
   font-family: sans-serif;
   background-color:  white;
   text-align: right;
-  height: 50px;
+  padding-top: 20px;
 }
 
 .results{
@@ -83,4 +86,28 @@ h3{
   background-color: grey;
   border: 1px solid white;
   height: 100px;
+}
+
+@media screen and (max-width: 991px) {
+
+body{
+  background-color: pink;
+}
+
+.trackName{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  background-color:  white;
+  text-align: right;
+  height: 100%;
+  float: left;
+  padding-top: 20px;
+}
+
+.results{
+  height: 100%;
+  border: 0;
+}
+
+
 }
