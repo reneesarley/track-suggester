@@ -13,25 +13,30 @@ $(function(){
   //on click function for any input
   $("input").click(function(){
     var rubyCurrent
-    var currentBs
-    var currentCs
+    var cssCurrent
+    var cSharpCurrent
     var rubyYesCol
     var rubyNoCol
     var cssYesCol
     var cssNoCol
+    var cSharpYesCol
+    var cSharpNoCol
     var parentId = $(this).attr("name");
     $("#" + parentId + " input").attr("disabled", true);
     function updateClasses(yesCol, noCol, trackName){
       if(eval(trackName + "Current") > 0){
+        alert("condition met");
         yesCol = "col-xs-" + eval(trackName + "Current");
         noCol = "col-xs-" + (10- eval(trackName + "Current"));
         $("#" + trackName + "Yes").attr('class', yesCol + " yes");
         $("#" + trackName + "No").attr('class', noCol + " no");
+        alert(yesCol);
       }else{
         yesCol = yesCol;
         noCol = noCol;
         }
     };
+
     currentValString = currentValString + $(this).val();
     alert(currentValString);
     //get letter counts
@@ -42,6 +47,7 @@ $(function(){
     //add letter value to class var
     updateClasses(rubyYesCol, rubyNoCol, "ruby");
     updateClasses(cssYesCol, cssNoCol, "css");
+    updateClasses(cSharpYesCol, cSharpNoCol, "cSharp");
   });
 
 });

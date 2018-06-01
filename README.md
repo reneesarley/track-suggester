@@ -6,11 +6,11 @@
 
 ## Description
 
-_This site collects responses from users and make suggestions for which Epicodus tracks would best suit them. Each track has a correspoding bar. As users asnwers questions the bars will increase in size if their response suggestions they would enjoy that specific track._
+_This site collects responses from users and makes suggestions for which Epicodus tracks would best suit them. Each track has a correspoding bar. As users answer questions the bars will increase in size if their responses suggest they would enjoy that specific track._
 
 ## Setup/Installation Requirements
 
-* Clone git repo from here: https://github.com/reneesarley/track-suggester
+* Clone gitHub repo from here: https://github.com/reneesarley/track-suggester
 * View deployed site here: https://reneesarley.github.io/track-suggester/
 
 ## Known Bugs

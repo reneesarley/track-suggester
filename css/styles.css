@@ -43,17 +43,10 @@ label {
  padding-left: 13px;
 }
 
-#rubyYes{
+#rubyYes, #cssYes, #cSharpYes {
   background-color: #00b3b4;
 }
 
-#cssYes{
-  background-color:  #00b3b4;
-}
-
-#cYes{
-  background-color:  #00b3b4;
-}
 .trackResult{
   height: 100px;
   border: 3px solid white;
