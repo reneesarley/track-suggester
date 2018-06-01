@@ -2,18 +2,13 @@ $(function(){
 
 
   $("#resetButton").click(function() {
-    $(".ourForm").trigger("reset");
+    $(".trackForm").trigger("reset");
+    $(".no").attr('class', "col-md-10 no");
+    $(".yes").attr('class', "hidden yes");
+
   });
 
-  $("#trackForm").submit(function(event) {
-    alert("submit button is working");
-
-    event.preventDefault();
-  });
-
-
-    var currentValString = ""
-
+  var currentValString = ""
 
   //on click function for any input
   $("input").click(function(){
