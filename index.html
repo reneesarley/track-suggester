@@ -14,38 +14,39 @@
       <h2>Answer the questions to see which track is best for you</h2>
       <div class="row surAndResult">
         <div class="col-md-6 survey">
-          <form class="ourForm">
-            <div class="question">
+          <form id="trackForm">
+            <div class="question" id="q1A">
               <h2>Question #1</h2>
-              <label class="control-label" for="q1A">
-                <input class="form-control" type="radio" name="age" id="q1a" value="a" required>
+              <label class="control-label" for="q1a">
+                <input class="form-control" type="radio" name="q1" id="q1a" value="a" required>
                 A
               </label>
               <label class="control-label" for="q1B">
-                <input  class="form-control" type="radio" name="age" id="q1b" value="b">
+                <input  class="form-control" type="radio" name="q1" id="q1b" value="b">
                 B
               </label>
               <label class="control-label" for="q1c">
-                <input  class="form-control" type="radio" name="age" id="q1c" value="c">
+                <input  class="form-control" type="radio" name="q1" id="q1c" value="c">
                 C
               </label>
             </div>
-            <div class="question">
+            <div class="question" id="q2">
               <h2>Question #2</h2>
               <label class="control-label" for="q2A">
-                <input class="form-control" type="radio" name="age" id="q2a" value="a" required>
+                <input class="form-control" type="radio" name="q2" id="q2a" value="a" required>
                 A
               </label>
               <label class="control-label" for="q2B">
-                <input  class="form-control" type="radio" name="age" id="q2b" value="b">
+                <input  class="form-control" type="radio" name="q2" id="q2b" value="b">
                 B
               </label>
               <label class="control-label" for="q2c">
-                <input  class="form-control" type="radio" name="age" id="q2c" value="c">
+                <input  class="form-control" type="radio" name="q2" id="q2c" value="c">
                 C
               </label>
             </div>
-            <button type="reset" id="resetButton" class="btn btn-primary">Reset Form</button>
+            <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+            <button type="reset" id="resetButton" class="btn btn-secondary">Reset Form</button>
           </form>
         </div>
         <div class="col-md-6 results">
