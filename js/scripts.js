@@ -15,18 +15,12 @@ $(function(){
     var rubyCurrent
     var cssCurrent
     var cSharpCurrent
-    var rubyYesCol
-    var rubyNoCol
-    var cssYesCol
-    var cssNoCol
-    var cSharpYesCol
-    var cSharpNoCol
     var parentId = $(this).attr("name");
     $("#" + parentId + " input").attr("disabled", true);
-    function updateClasses(yesCol, noCol, trackName){
+    function updateClasses(trackName){
       if(eval(trackName + "Current") > 0 && eval(trackName + "Current") <10 ){
-        yesCol = "col-xs-" + eval(trackName + "Current");
-        noCol = "col-xs-" + (10- eval(trackName + "Current"));
+        var yesCol = "col-xs-" + eval(trackName + "Current");
+        var noCol = "col-xs-" + (10- eval(trackName + "Current"));
         $("#" + trackName + "Yes").attr('class', yesCol + " yes");
         $("#" + trackName + "No").attr('class', noCol + " no");
       }else if(eval(trackName + "Current") === 10){
@@ -45,9 +39,9 @@ $(function(){
     cssCurrent = currentValString.split("b").length - 1;
     cSharpCurrent = currentValString.split("c").length - 1;
     //add letter value to class var
-    updateClasses(rubyYesCol, rubyNoCol, "ruby");
-    updateClasses(cssYesCol, cssNoCol, "css");
-    updateClasses(cSharpYesCol, cSharpNoCol, "cSharp");
+    updateClasses("ruby");
+    updateClasses("css");
+    updateClasses("cSharp");
   });
 
 });
