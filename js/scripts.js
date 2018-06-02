@@ -24,15 +24,19 @@ $(function(){
     var parentId = $(this).attr("name");
     $("#" + parentId + " input").attr("disabled", true);
     function updateClasses(yesCol, noCol, trackName){
-      if(eval(trackName + "Current") > 0){
+      if(eval(trackName + "Current") > 0 && eval(trackName + "Current") <10 ){
         yesCol = "col-xs-" + eval(trackName + "Current");
         noCol = "col-xs-" + (10- eval(trackName + "Current"));
         $("#" + trackName + "Yes").attr('class', yesCol + " yes");
         $("#" + trackName + "No").attr('class', noCol + " no");
-      }else{
-        yesCol = yesCol;
-        noCol = noCol;
-        }
+      }else if(eval(trackName + "Current") === 10){
+        yesCol = "col-xs-" + eval(trackName + "Current");
+        $("#" + trackName + "Yes").attr('class', yesCol + " yes");
+        $("#" + trackName + "No").attr('class', "hidden no");
+          }else{
+          yesCol = yesCol;
+          noCol = noCol;
+          }
     };
 
     currentValString = currentValString + $(this).val();
